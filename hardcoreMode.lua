@@ -5,7 +5,6 @@ local hcNPC = 90000
 local banTimer = 999999999
 
 --on death function - checks if player has token and bans character if it does.
--- 99999999
 local function PlayerDeath(event, killer, killed)
     if(killed:HasItem(hardCoreItem,1)) then
         print(killed:GetName() .. " was killed by " .. killer:GetName())
