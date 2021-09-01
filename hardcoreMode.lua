@@ -23,8 +23,8 @@ end
 function OnSelect(event, player, unit, sender, intid, code)
 	if (intid == 1) then
 		player:GossipMenuAddItem(0, "Just making sure that you want to turn on hardcore mode?? This will lock the character after death and you will no longer be able to play the character!!!", 0, 2)
-        player:GossipMenuAddItem(0, "NO TAKE ME BACK!", 0, 3)
-        player:GossipSendMenu(2, unit)
+        	player:GossipMenuAddItem(0, "NO TAKE ME BACK!", 0, 3)
+        	player:GossipSendMenu(2, unit)
 	end
 end
 
