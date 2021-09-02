@@ -1,5 +1,6 @@
 --Item that designates that character is a hardcore character.
 local hardCoreItem = 90000
+--NPC id
 local hcNPC = 90000
 --This is how long the character is locked for - default is 32 years.
 local banTimer = 999999999
@@ -31,7 +32,7 @@ end
 --if player chooses to do hardcore they receive the token 
 function OnHardCore(event, player, unit, sender, initid, code)
     if (initd == 2) then
-        player:GiveItem(90000)
+        player:GiveItem(hardCoreItem)
     --else gossip ends
     else
         player:GossipComplete()
