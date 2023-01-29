@@ -30,9 +30,9 @@ function OnSelect(event, player, unit, sender, intid, code)
 end
 
 --if player chooses to do hardcore they receive the token 
-function OnHardCore(event, player, unit, sender, initid, code)
-    if (initd == 2) then
-        player:GiveItem(hardCoreItem)
+function OnHardCore(event, player, unit, sender, intid, code)
+    if (intid == 2) then
+        player:AddItem(hardCoreItem, 1)
     --else gossip ends
     else
         player:GossipComplete()
